@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+ <html>
+  <head>
+
+<!--************* Basic Page Needs ****************-->
+
+  <title>Game of Thrones Game | By Jared Ross</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<!--******************** Fonts ********************-->
+
+	<link href="https://fonts.googleapis.com/css?family=Spectral+SC" rel="stylesheet">
+
+<!--********************* CSS *********************-->
+
+	<link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+
+<!--******************** JQuery ********************-->
+
+<script src="https://code.jquery.com/jquery.js"></script>
+
+
+<!-- Javascript -->
+<script src="assets/javascript.js"></script>
+
+</head>
+
+<!--******************** Body **********************-->
+
+<body>
+
+<!--******************** Jumbotron *******************-->
+
+    <div class="jumbotron">
+      <h1 class="text-center"><strong>Game of Thrones</strong></h1>
+      <hr>
+      <div class="text-center">
+        <button class="btn btn-warning btn-xs theme-button"><span class="glyphicon glyphicon-music"></span> Play Theme!</button>
+        <button class="btn btn-default btn-xs pause-button"><span class="glyphicon glyphicon-pause"></span> Pause Song</button>
+      </div>
+
+    </div>
+
+
+
+
+<!--******************** Character Select *******************-->
+
+  <div class="container">
+  	<div class="row row-first">
+  	  <div id="hero-1" class="col-md-2 characters">
+        <h6 class="text-center"><span class="name">Tormund</span></h6>
+  	  	  <img class="rounded img-fluid" src="assets/images/tormund.jpg">
+        <h6 class="text-center"><span class="hp">100</span></h6>
+  	  </div>
+      <div id="hero-2" class="col-md-2 characters">
+        <h6 class="text-center"><span class="name">The Mountain</span></h6>
+          <img class="rounded img-fluid" src="assets/images/the-mountain.jpg">
+        <h6 class="text-center"><span class="hp">120</span></h6>
+      </div>
+      <div id="hero-3" class="col-md-2 characters">
+        <h6 class="text-center"><span class="name">Jon Snow</span></h6>
+          <img class="rounded img-fluid" src="assets/images/jon-snow.jpg">
+        <h6 class="text-center"><span class="hp">140</span></h6>
+      </div>
+      <div id="hero-4" class="col-md-2 characters">
+        <h6 class="text-center"><span class="name">The Night King</span></h6>
+          <img class="rounded img-fluid" src="assets/images/night-king.jpg">
+        <h6 class="text-center"><span class="hp">160</span></h6>
+      </div>
+    </div>
+
+
+<!--******************** Player Hero Appears *******************-->
+
+	<div class="row">
+	  <div class="col-md-2">
+	  	<h3>Your Character</h3>
+      <span id="userHero"></span>
+	  </div>
+	</div>
+
+	<div class="row">
+	  <div class="col-md-2">
+	  	<span id="userEnemies"></span>
+	  </div>
+	</div>
+    <div class="row">
+    <div class="col-md-2">
+      <h3>Enemies Available To Attack</h3>
+      <h3>Fight Section</h3>
+      
+<!-- Buttons -->
+
+      <div class="col-sm-3">
+        <div id="buttons-container">
+          <ul class="buttons-ul">
+            <li><button type="button" class="btn btn-custom" id="attack">Attack</button></li>
+            <li><button type="button" class="btn btn-custom" id="reset">Restart</button></li>
+          </ul>
+        </div>
+      </div>
+
+<!-- Text Box -->
+
+      <div class="col-sm-9">
+        <div id="comment-container">
+          <p id="comment-box"></p>
+        </div>
+      </div>
+
+
+      <h3>Defender</h3>
+
+    </div>
+  </div>
+
+
+
+  </div>
+
+</body>
+</html>
